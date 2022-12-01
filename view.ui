@@ -10,6 +10,11 @@
     <height>473</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -57,9 +62,17 @@
      <rect>
       <x>240</x>
       <y>190</y>
-      <width>113</width>
+      <width>161</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="from_label">
@@ -121,11 +134,19 @@
    <widget class="QLineEdit" name="output_amount">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>150</x>
       <y>310</y>
-      <width>131</width>
+      <width>151</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="clear_Button">
@@ -148,7 +169,7 @@
      <string>clear all</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="from_comboBox">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -160,6 +181,16 @@
     <item>
      <property name="text">
       <string>USD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD</string>
      </property>
     </item>
     <item>
@@ -178,7 +209,7 @@
      </property>
     </item>
    </widget>
-   <widget class="QComboBox" name="comboBox_2">
+   <widget class="QComboBox" name="to_comboBox">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -199,6 +230,16 @@
     </item>
     <item>
      <property name="text">
+      <string>JPY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
       <string>GBP</string>
      </property>
     </item>
@@ -208,6 +249,26 @@
      </property>
     </item>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>amount exchanged :</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -215,7 +276,7 @@
      <x>0</x>
      <y>0</y>
      <width>505</width>
-     <height>21</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>
